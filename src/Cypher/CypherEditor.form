@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Cypher.CypherEditor">
+  <grid id="27dc6" binding="Panel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="2312" height="5743"/>
+    </constraints>
+    <properties>
+      <foreground color="-7957061"/>
+    </properties>
+    <border type="bevel-raised" title-justification="1">
+      <font/>
+    </border>
+    <children>
+      <grid id="a1c77" layout-manager="GridLayoutManager" row-count="3" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="1" use-parent-layout="false">
+            <minimum-size width="250" height="100"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="f1d5f" class="javax.swing.JTextField" binding="InputString">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Please Input Your String Here"/>
+            </properties>
+          </component>
+          <component id="c9931" class="javax.swing.JRadioButton" binding="Encrypt">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Encrypt"/>
+            </properties>
+          </component>
+          <component id="fbd63" class="javax.swing.JTextField" binding="Cyphers">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="100" height="60"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Shift-Cyphers"/>
+            </properties>
+          </component>
+          <component id="3a94d" class="javax.swing.JButton" binding="Start">
+            <constraints>
+              <grid row="1" column="2" row-span="2" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false">
+                <preferred-size width="-1" height="60"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Perform Calculation"/>
+            </properties>
+          </component>
+          <component id="b8533" class="javax.swing.JRadioButton" binding="Decrypt">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Decrypt"/>
+            </properties>
+          </component>
+          <component id="194a6" class="javax.swing.JCheckBox" binding="AllCyphers">
+            <constraints>
+              <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Include all 26 Cyphers"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="b0ff4" class="javax.swing.JTextPane" binding="Output">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="200" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Please enter a string to convert then any number of integers seperated by spaces into the shift-cypher. For example a shift cypher of 1 will shift all values within the string by 1. A shift-cypher of 1 2 13 however will use a multi-shift cypher of [C1, C2, C13} repeating. Pleae note: &quot;Include all 26 Cyphers&quot; only works when a single cypher is entered."/>
+        </properties>
+      </component>
+      <hspacer id="fdb31">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="10"/>
+          </grid>
+        </constraints>
+      </hspacer>
+    </children>
+  </grid>
+</form>
